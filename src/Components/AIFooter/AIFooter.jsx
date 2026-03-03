@@ -76,8 +76,8 @@ const AIFooter = () => {
         {/* Bottom Legal Section */}
         <div className="ai-footer-bottom">
           <div className="ai-footer-legal">
-            <a style={{cursor:"pointer"}} onClick={() => { navigate('/term');}} >Terms</a>
-            <a  style={{cursor:"pointer"}} onClick={() => { navigate('/term');}} >Privacy</a>
+            <span style={{cursor:"pointer"}} onClick={() => { navigate('/term');}} >Terms</span>
+            <span  style={{cursor:"pointer"}} onClick={() => { navigate('/term');}} >Privacy</span>
           </div>
 
           <div className="ai-footer-copyright">
