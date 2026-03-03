@@ -1,0 +1,106 @@
+.cap-section {
+  background: #000;
+  color: #fff;
+  padding: 20px 5%;
+  max-width: 1400px;
+  margin: auto;
+  font-family: "Manrope", sans-serif;
+}
+
+.cap-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.cap-main-title {
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+.cap-main-subtitle {
+  color: #949494;
+  max-width: 700px;
+  margin: 20px auto 40px;
+  line-height: 1.6;
+}
+
+.cap-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.cap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.cap-card {
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 20px;
+  transition: 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.cap-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255,255,255,0.15);
+}
+
+.cap-icon {
+  margin-bottom: 20px;
+}
+
+.cap-title {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.cap-subtitle {
+  font-size: 14px;
+  color: #949494;
+  margin-bottom: 20px;
+}
+
+.cap-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.cap-list li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #ccc;
+}
+
+.cap-link {
+  color: #3d44ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cap-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .cap-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cap-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cap-main-title {
+    font-size: 40px;
+  }
+}

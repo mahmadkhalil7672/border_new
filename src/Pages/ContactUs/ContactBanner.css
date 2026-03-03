@@ -1,0 +1,118 @@
+.contact-banner-container {
+  position: relative;
+  width: 100%;
+  min-height: 350px; /* Slightly taller for a more premium feel */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://script.viserlab.com/revptc/assets/images/frontend/breadcrumb/6381fefd2975c1669463805.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  /* Ensures it blends into your black body if there's any gap */
+  background-color: #000; 
+}
+
+/* Darker, more neutral overlay to match black theme */
+.contact-banner-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:black;
+  z-index: 1;
+}
+
+.contact-overlay-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contact-main-title {
+  font-size: 48px; /* Slightly larger */
+  font-weight: 800;
+  margin-bottom: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.contact-breadcrumb-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-breadcrumb-list {
+  list-style: none;
+  display: flex;
+  padding: 10px 25px;
+  margin: 0;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.05); /* Subtle glass pill shape */
+  border-radius: 50px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-link {
+  color: #da6cff; /* Match the exact Orange from Contact Section */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+
+.contact-breadcrumb-separator {
+  margin: 0 12px;
+  color: rgba(255, 255, 255, 0.3); /* Muted separator looks cleaner */
+  font-weight: 300;
+}
+
+.contact-active {
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .contact-main-title {
+    font-size: 32px;
+  }
+  .contact-banner-container {
+    min-height: 250px;
+  }
+}
+
+
+
+
+/* ... existing styles ... */
+
+.contact-description {
+  max-width: 700px;
+  margin: 0 auto 30px; /* Centers the text and adds space before breadcrumbs */
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8); /* Slightly muted for better hierarchy */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .contact-main-title {
+    font-size: 32px;
+  }
+  .contact-banner-container {
+    min-height: 250px;
+  }
+  .contact-description {
+    font-size: 15px;
+    padding: 0 20px; /* Prevents text hitting screen edges */
+  }
+}

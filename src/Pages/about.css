@@ -1,0 +1,184 @@
+/* ===========================
+   About Us Section
+=========================== */
+
+.about-section {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px 5%;
+  max-width: 1400px;
+  margin: auto;
+  font-family: "Manrope", sans-serif;
+}
+
+/* Header */
+.about-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-title {
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: -1px;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+
+.about-subtitle {
+  color: #949494;
+  font-size: 16px;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Content Layout */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+/* Left Text */
+.about-left {
+  flex: 1.2;
+}
+
+.about-paragraph {
+  color: #949494;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  max-width: 600px;
+}
+
+/* Highlight Text */
+.about-highlight {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Right Visual Section */
+.about-right {
+  flex: 1;
+  position: relative;
+}
+
+/* Visual Box */
+.about-media-box {
+  width: 100%;
+  height: 400px;
+  background: #1a1a1a;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Optional Image */
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Glass Info Card */
+.about-glass-card {
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+  width: 240px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(25px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+}
+
+.about-glass-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about-glass-text {
+  font-size: 12px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* CTA Section */
+.about-cta {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.about-cta-text {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.about-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 14px 32px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-blue {
+  background-color: #3d44ff;
+}
+
+.btn-purple {
+  background-color: #da6cff;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 1200px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-paragraph {
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-glass-card {
+    position: static;
+    margin: 30px auto 0 auto;
+  }
+
+  .about-title {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 5%;
+  }
+
+  .about-title {
+    font-size: 36px;
+  }
+}

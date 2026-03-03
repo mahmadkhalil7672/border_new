@@ -1,0 +1,249 @@
+/* Unique Namespace: ai-innovation- */
+
+.ai-innovation-wrapper {
+  background-color: #05070a;
+  color: #ffffff;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.ai-innovation-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Section */
+.ai-innovation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.ai-innovation-main-title {
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  line-height: 1.1;
+  font-weight: 500;
+  max-width: 750px;
+  margin: 0;
+}
+
+.ai-innovation-header-desc {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 360px;
+  margin-top: 10px;
+}
+
+/* Layout Grid */
+.ai-innovation-grid {
+  display: grid;
+  grid-template-columns: 32% 1fr;
+  gap: 40px;
+}
+.ai-new{
+  display: flex;
+    gap: 100px;
+    text-align: start;
+}
+@media (max-width: 670px) {
+  .ai-new {
+    flex-direction: column;
+    gap: 5px; 
+  }
+}
+.ai-innovation-img-left {
+  border-radius: 40px;
+  width: 100%;
+  aspect-ratio: 3 / 4.2;
+  overflow: hidden;
+}
+
+.ai-innovation-img-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ai-innovation-right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* Middle Block */
+.ai-innovation-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.ai-innovation-badge {
+  padding: 8px 18px;
+  border-radius: 100px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ai-innovation-purple { background-color: #b026ff; }
+.ai-innovation-blue { background-color: #3b26ff; }
+
+.ai-innovation-middle-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.ai-innovation-mid-title {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.ai-innovation-mid-desc {
+  color: #94a3b8;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.ai-innovation-img-small {
+  border-radius: 35px;
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.ai-innovation-img-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Footer Stats Card */
+.ai-innovation-stats-card {
+  background-color: #0a0c10;
+  border: 1px solid #2d2f36;
+  border-radius: 40px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ai-innovation-card-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.ai-innovation-icon-box {
+  color: #b026ff;
+  flex-shrink: 0;
+}
+
+.ai-innovation-card-text h3 {
+  font-size: 1.5rem;
+  margin: 0 0 10px 0;
+  line-height: 1.3;
+}
+
+.ai-innovation-card-text p {
+  color: #64748b;
+  font-size: 0.85rem;
+  max-width: 280px;
+  margin: 0;
+}
+
+.ai-innovation-stat-box {
+  text-align: right;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 50px;
+}
+
+.ai-innovation-number {
+  font-size: clamp(3rem, 4vw, 4rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.ai-innovation-label {
+  color: #94a3b8;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+/* New Target Audience Section */
+.ai-innovation-target-section {
+  margin-top: 40px;
+  padding: 20px 0;
+}
+
+.ai-innovation-target-heading {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.ai-innovation-target-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.ai-innovation-target-point {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+}
+
+.ai-innovation-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: #b026ff;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.ai-innovation-target-point p {
+  color: #94a3b8;
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .ai-innovation-grid { grid-template-columns: 1fr; }
+  .ai-innovation-header { flex-direction: column; gap: 20px; }
+  .ai-innovation-middle-flex { flex-direction: column; align-items: flex-start; }
+  .ai-innovation-img-small { display: none; }
+  .ai-innovation-stats-card { flex-direction: column; text-align: center; padding: 40px 20px; gap: 40px; }
+  .ai-innovation-card-info { flex-direction: column; }
+  .ai-innovation-stat-box { 
+    border-left: none; 
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+    padding: 30px 0 0 0; 
+    width: 100%; 
+    text-align: center; 
+  }
+  .ai-innovation-container { max-width: 95%; }
+  .ai-innovation-target-list { grid-template-columns: 1fr; }
+}

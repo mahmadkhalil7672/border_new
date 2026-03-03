@@ -1,0 +1,237 @@
+/* Universal box sizing */
+.ct-ui-wrapper * {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ct-ui-wrapper {
+    /* Changed background to solid black with subtle overlay */
+    background: #000000;
+    padding: 100px 0;
+    width: 100%;
+    color: #ffffff;
+    min-height: 600px;
+}
+
+.ct-ui-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.ct-ui-flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+/* Sidebar Info Styles */
+.ct-ui-sidebar {
+    flex: 1;
+    min-width: 300px;
+}
+
+.ct-ui-info-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.05); /* Slightly lighter for contrast on black */
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.ct-ui-info-card:hover {
+    transform: translateY(-5px);
+    /* Border glows with the primary blue */
+    border-color: #3d44ff; 
+    box-shadow: 0 5px 15px rgba(61, 68, 255, 0.2);
+}
+
+.ct-ui-icon-box {
+    /* Using your new gradient color scheme */
+    background: linear-gradient(135deg, #3d44ff 0%, #da6cff 100%);
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 22px;
+    flex-shrink: 0;
+    margin-right: 20px;
+    box-shadow: 0 10px 20px rgba(61, 68, 255, 0.3);
+}
+
+.ct-ui-heading {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ct-ui-desc {
+    margin: 5px 0 0;
+    color: #b0b0b0;
+    font-size: 15px;
+}
+
+/* Main Form Area */
+.ct-ui-main-content {
+    flex: 1.5;
+    background: #0a0a0a; /* Deep charcoal black */
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.ct-ui-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.ct-ui-row.ct-ui-split {
+    display: flex;
+    gap: 20px;
+}
+
+.ct-ui-field-group {
+    flex: 1;
+}
+
+.ct-ui-input {
+    width: 100%;
+    padding: 16px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    font-size: 15px;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.ct-ui-input::placeholder {
+    color: #555;
+}
+
+.ct-ui-input:focus {
+    /* Focus uses the blue-to-purple transition */
+    border-color: #da6cff;
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 0 15px rgba(218, 108, 255, 0.15);
+}
+
+.ct-ui-textarea {
+    height: 150px;
+    resize: none;
+}
+
+.ct-ui-submit-btn {
+    /* Main Gradient Button */
+    background: linear-gradient(135deg, #3d44ff 0%, #da6cff 100%);
+    color: #fff;
+    border: none;
+    padding: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.ct-ui-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(61, 68, 255, 0.4);
+    filter: brightness(1.1);
+}
+
+/* --- SUCCESS STATE STYLES --- */
+.ct-ui-success-state {
+    text-align: center;
+    animation: fadeInScale 0.5s ease-out;
+}
+
+.ct-ui-success-icon {
+    font-size: 50px;
+    /* Success icon uses the purple color for branding consistency */
+    color: #da6cff;
+    background: rgba(218, 108, 255, 0.1);
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    border: 2px solid #da6cff;
+}
+
+.ct-ui-success-title {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.ct-ui-success-text {
+    color: #b0b0b0;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ct-ui-back-btn {
+    background: transparent;
+    border: 1px solid #3d44ff;
+    color: #3d44ff;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.ct-ui-back-btn:hover {
+    background: #3d44ff;
+    color: #fff;
+}
+
+@keyframes fadeInScale {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* --- RESPONSIVENESS --- */
+@media (max-width: 991px) {
+    .ct-ui-flex-grid {
+        flex-direction: column;
+    }
+    .ct-ui-sidebar, .ct-ui-main-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .ct-ui-row.ct-ui-split {
+        flex-direction: column;
+    }
+    .ct-ui-main-content {
+        padding: 25px;
+    }
+}

@@ -1,0 +1,196 @@
+/* Container Layout */
+.zy-pricing-page-root {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 60px 20px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Header Section */
+.zy-header-container {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 10px;
+}
+
+.zy-main-title {
+  /* clamp(min, preferred, max) handles fluid font sizing */
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.1;
+  background: linear-gradient(to bottom, #ffffff, #a1a1a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.zy-subtitle {
+  color: #888;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Responsive Grid System */
+.zy-grid-wrapper {
+  display: grid;
+  /* Automatically wraps cards when they hit 320px */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: stretch; /* Keeps cards same height in a row */
+}
+
+/* Card Styling */
+.zy-card {
+  background: #0f0f0f;
+  border: 1px solid #222;
+  border-radius: 24px;
+  padding: 40px 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Featured Card Highlight (Desktop Only) */
+@media (min-width: 1024px) {
+  .zy-card-featured {
+    border: 2px solid #3b82f6;
+    background: #12161f;
+    transform: scale(1.05); /* Only scale on desktop to avoid mobile clipping */
+    z-index: 2;
+  }
+}
+
+.zy-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #3b82f6;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+/* Typography Inside Cards */
+.zy-tier-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.zy-price-box {
+  margin-bottom: 4px;
+}
+
+.zy-amount {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 800;
+}
+
+.zy-period {
+  color: #666;
+  font-size: 1rem;
+}
+
+.zy-onboarding-text {
+  font-size: 0.85rem;
+  color: #3b82f6;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.zy-description {
+  color: #999;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+/* Features List */
+.zy-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  flex-grow: 1; /* Pushes button to bottom */
+}
+
+.zy-feature-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+.zy-check {
+  color: #3b82f6;
+  flex-shrink: 0;
+}
+
+/* Audience Box */
+.zy-audience-box {
+  background: #161616;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  margin-bottom: 24px;
+  border: 1px solid #222;
+}
+
+/* Buttons */
+.zy-cta-btn {
+  width: 100%;
+  padding: 18px;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  border: none;
+  font-size: 1rem;
+}
+
+.zy-btn-solid {
+  background: #3b82f6;
+  color: #fff;
+  box-shadow: 0 10px 20px -10px rgba(59, 130, 246, 0.5);
+}
+
+.zy-btn-outline {
+  background: #222;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.zy-cta-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+  .zy-pricing-page-root {
+    padding: 40px 16px;
+  }
+  
+  .zy-grid-wrapper {
+    grid-template-columns: 1fr; /* Force single column on very small phones */
+    gap: 40px;
+  }
+
+  .zy-card {
+    padding: 32px 20px;
+  }
+}
