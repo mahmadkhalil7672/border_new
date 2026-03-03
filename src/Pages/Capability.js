@@ -15,9 +15,9 @@ const CapabilityCard = ({ title, subtitle, points, icon }) => {
         ))}
       </ul>
 
-      <a href="#" className="cap-link">
+      <span  className="cap-link">
         Learn More →
-      </a>
+      </span>
     </div>
   );
 };
