@@ -66,9 +66,9 @@ const AIFooter = () => {
           </div>
 
           <div className="ai-footer-col ai-footer-address">
-            <h4>Office Location</h4>
-            <p>info@zynterris.com</p>
-                        <p>+1 (818) 282-3110</p>
+            <h4>Office Locations</h4>
+            <p>📧 info@zynterris.com</p>
+                        <p>📱 +1 (818) 282-3110</p>
 
           </div>
         </div>

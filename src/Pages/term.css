@@ -1,7 +1,7 @@
 .terms-section {
-  background: #000;
+  background: #0c0c0c;
   color: #fff;
-  padding: 20px 5%;
+  padding: 10px 5%;
   max-width: 1000px;
   margin: auto;
   font-family: "Manrope", sans-serif;
@@ -9,58 +9,70 @@
 
 .terms-header {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .terms-title {
-  font-size: 56px;
-  font-weight: 400;
-  letter-spacing: -1px;
-  margin-bottom: 15px;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
 }
 
 .terms-subtitle {
-  color: #949494;
-  font-size: 16px;
+  font-size: 15px;
+  color: #b0b0b0;
 }
 
 .terms-content {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 25px; /* reduced gap */
 }
 
 .terms-block {
   background: #111;
-  padding: 40px;
-  border-radius: 20px;
+  padding: 25px 25px;
+  border-radius: 16px;
   border: 1px solid rgba(255,255,255,0.05);
-  transition: 0.3s ease;
+  transition: all 0.25s ease;
 }
 
 .terms-block:hover {
-  border-color: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.12);
 }
 
 .terms-block h2 {
-  font-size: 22px;
-  margin-bottom: 15px;
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #fff;
 }
 
 .terms-block p {
-  color: #cfcfcf;
-  line-height: 1.8;
-  font-size: 15px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #ccc;
+  margin: 0; /* removed extra paragraph spacing */
 }
 
 /* Responsive */
-
 @media (max-width: 768px) {
   .terms-title {
-    font-size: 38px;
+    font-size: 32px;
   }
-
   .terms-block {
-    padding: 25px;
+    padding: 20px;
   }
+}
+.terms-block-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.terms-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

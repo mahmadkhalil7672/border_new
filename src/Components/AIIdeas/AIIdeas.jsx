@@ -23,7 +23,7 @@ const AIIdeas = () => {
          <div className="ai-ideas-header">
        
  <div style={{justifyContent:"center"}} className="ai-innovation-badge-row">
-                <span style={{padding:"15px 25px"}} className="ai-innovation-badge ai-innovation-purple">
+                <span onClick={() => { navigate('/contact');}} style={{padding:"15px 25px",cursor:"pointer"}} className="ai-innovation-badge ai-innovation-purple">
 Call Us Today!
                 </span>
                

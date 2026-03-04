@@ -1,7 +1,9 @@
 import React from 'react';
 import './Hero.css';
+import { Link, useNavigate } from "react-router-dom";
 
 const Hero = () => {
+    const navigate = useNavigate();
   return (
     <section className="hero-section">
       <div className="hero-left">
@@ -43,7 +45,7 @@ Zynterris enables enterprises to deploy compliant, production-ready AI systems w
         <div className="hero-actions">
           <button   onClick={() => window.location.href = "tel:+18182823110"}
  className="btn btn-blue" type="button">Install AI Into My Company</button>
-          <button className="btn btn-purple" type="button">Book a Free AI Consultation</button>
+          <button onClick={() => { navigate('/contact');}} className="btn btn-purple" type="button">Book a Free AI Consultation</button>
         </div>
       </div>
 

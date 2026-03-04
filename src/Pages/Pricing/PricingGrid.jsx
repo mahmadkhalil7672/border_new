@@ -66,7 +66,7 @@ const PricingGrid = () => {
             <strong>Who it’s for:</strong> {tier.who}
           </div>
 
-          <button className={`zy-cta-btn ${tier.highlight ? 'zy-btn-solid' : 'zy-btn-outline'}`}>
+          <button  onClick={() => window.location.href = "tel:+18182823110"}  className={`zy-cta-btn ${tier.highlight ? 'zy-btn-solid' : 'zy-btn-outline'}`}>
             {tier.cta}
           </button>
         </div>

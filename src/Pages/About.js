@@ -1,7 +1,9 @@
 import React from "react";
 import "./about.css";
 import image1 from "../Images/Image01.jpg"
+import { useNavigate } from "react-router-dom";
 function About() {
+  const navigate=useNavigate()
   return (
     <section className="about-section">
 
@@ -70,8 +72,8 @@ function About() {
         </p>
 
         <div className="about-actions">
-          <button className="btn btn-blue">Contact Us</button>
-          <button className="btn btn-purple">Book a Call</button>
+          <button onClick={() => { navigate('/contact');}} className="btn btn-blue">Contact Us</button>
+          <button  onClick={() => window.location.href = "tel:+18182823110"} className="btn btn-purple">Book a Call</button>
         </div>
 
         <p className="about-subtitle" style={{ marginTop: "20px" }}>

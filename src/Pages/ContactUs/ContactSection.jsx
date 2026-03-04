@@ -26,18 +26,12 @@ const ContactSection = () => {
           
           {/* Sidebar Section */}
           <div className="ct-ui-sidebar">
-            <div className="ct-ui-info-card">
-              <div className="ct-ui-icon-box"><i className="fas fa-map-marker-alt"></i></div>
-              <div className="ct-ui-text-box">
-                <h4 className="ct-ui-heading">Office Address</h4>
-                <p className="ct-ui-desc">123 california 10022</p>
-              </div>
-            </div>
+           
 
             <div className="ct-ui-info-card">
               <div className="ct-ui-icon-box"><i className="fas fa-envelope"></i></div>
               <div className="ct-ui-text-box">
-                <h4 className="ct-ui-heading">Email Address</h4>
+                <h4 className="ct-ui-heading"> 📧Email Address</h4>
                 <p className="ct-ui-desc">info@zynterris.com</p>
               </div>
             </div>
@@ -45,8 +39,8 @@ const ContactSection = () => {
             <div className="ct-ui-info-card">
               <div className="ct-ui-icon-box"><i className="fas fa-phone-alt"></i></div>
               <div className="ct-ui-text-box">
-                <h4 className="ct-ui-heading">Phone Number</h4>
-                <p className="ct-ui-desc">+1 234 4544</p>
+                <h4 className="ct-ui-heading">📱Phone Number</h4>
+                <p className="ct-ui-desc">+18182823110</p>
               </div>
             </div>
           </div>
